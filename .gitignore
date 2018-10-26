@@ -1,0 +1,12 @@
+.vs
+*.suo
+*.user
+bin
+obj
+*.pdb
+__history
+__recovery
+*.dproj.local
+*.identcache
+*.stat
+
