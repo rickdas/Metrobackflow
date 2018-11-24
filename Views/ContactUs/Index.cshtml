@@ -22,31 +22,31 @@
                 <div class="form-group">
                     @Html.LabelFor(model => model.Name)
                     @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Name)
+                    @Html.ValidationMessageFor(model => model.Name, null, new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.Phone)
                     @Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Phone)
+                    @Html.ValidationMessageFor(model => model.Phone, null, new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.Email)
                     @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Email)
+                    @Html.ValidationMessageFor(model => model.Email, null, new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.Subject)
                     @Html.TextBoxFor(model => model.Subject, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Subject)
+                    @Html.ValidationMessageFor(model => model.Subject, null, new { @class = "text-danger" })
                 </div>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.Message)
                     @Html.TextAreaFor(model => model.Message, new { rows = "6", cols = "50", @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Message)
+                    @Html.ValidationMessageFor(model => model.Message, null, new { @class = "text-danger" })
                 </div>
                 <input type="submit" value="Send Email" class="btn btn-primary" />
                 <br />
