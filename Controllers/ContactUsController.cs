@@ -35,6 +35,7 @@ namespace metrobackflow.Controllers
         /// <param name="c"></param>
         /// <returns></returns>
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [ActionName("SendEmail")]
         public async Task<ActionResult> SendEmail(ContactUsModel c)
         {
