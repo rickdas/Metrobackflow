@@ -26,7 +26,7 @@ namespace HylanderManagement.Controllers
             int i = id.IndexOf('.');
             if (i == -1)
             {
-                return Ok("not found");
+                return Ok(id);
             }
             else
             {
