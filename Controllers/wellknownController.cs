@@ -23,15 +23,14 @@ namespace HylanderManagement.Controllers
         [Produces("text/plain")]
         public IActionResult Get(string id)
         {
-            //int i = id.IndexOf('.');
-            //if (i == -1)
-            //{
-            return Ok(id);
-            //}
-            //else
-            //{
-            //    return Ok(id.Substring(0, i));
-            //}
+            int i = id.IndexOf('.');
+            if (i == -1)
+            {
+                return Ok("[" + id + "]");
+            }
+            else
+            {
+                return Ok("[" + id.Substring(0, i) + "]");
+            }
         }
     }
-}
