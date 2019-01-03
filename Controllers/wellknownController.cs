@@ -19,6 +19,11 @@ namespace HylanderManagement.Controllers
 
         private IHostingEnvironment Env { get; }
 
+        /// <summary>
+        /// for certification verification -- this is a temp file
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("acme-challenge/{id}")]
         [Produces("text/plain")]
         public IActionResult Get(string id)
