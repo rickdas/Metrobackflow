@@ -30,7 +30,7 @@ namespace HylanderManagement.Controllers
             }
             else
             {
-                return Ok(id.Substring(0, i - 1));
+                return Ok(id.Substring(0, i));
             }
         }
     }
