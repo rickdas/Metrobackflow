@@ -31,3 +31,4 @@ namespace HylanderManagement.Controllers
             return Ok("kSUxP6TjgUqVHadXzo8-r8KdXShgj7g7s84KH1Bsi-Y.TMv_ZG7WmqTHcTVqqzsl5bHV24P-j295TZ9WcaNagSQ");
         }
     }
+}
