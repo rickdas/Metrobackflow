@@ -23,7 +23,7 @@ namespace HylanderManagement.Controllers
         [Produces("text/plain")]
         public IActionResult Get(string id)
         {
-            return Ok("dZoZdzKcYu7YVwittVVHI0W4OpUpR6mXFFoMmqnqvLo.TMv_ZG7WmqTHcTVqqzsl5bHV24P-j295TZ9WcaNagSQ");
+            return Ok("GBg5QGNNP6YVOUjCbOyzcbBK9aEz7DkIjw4M4AQvfwk.TMv_ZG7WmqTHcTVqqzsl5bHV24P-j295TZ9WcaNagSQ");
         }
     }
 }
