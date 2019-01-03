@@ -51,12 +51,12 @@ namespace metrobackflow
 
             //For Extra Security
             //goto securityheaders.com to check it
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
-            //app.UseHsts(opt => opt.MaxAge(days: 365).IncludeSubdomains());
+            app.UseHsts(opt => opt.MaxAge(days: 365).IncludeSubdomains());
             app.UseXXssProtection(opt => opt.EnabledWithBlockMode());
             app.UseXContentTypeOptions();
             app.UseXfo(opt => opt.SameOrigin());
