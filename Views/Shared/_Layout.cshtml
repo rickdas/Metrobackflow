@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Metropolitan Backflow</title>
+    <link rel="manifest" href="~/manifest.json"></link>
     <link rel="stylesheet" href="~/css/bootstrap.css" />
-    @*<link rel="stylesheet" href="~/css/site.min.css" />*@
+    @*
+    <link rel="stylesheet" href="~/css/site.min.css" />*@
     @RenderSection("IncludeHead", required: false)
 </head>
 <body>
@@ -39,6 +41,23 @@
         </footer>
     </div>
 
+    <script src="~/js/pwa/manup.min.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+                console.log("[PWA Builder] active service worker found, no need to register");
+            } else {
+                // Register the service worker
+                navigator.serviceWorker
+                    .register("~/js/pwa/pwabuilder-sw.js", {
+                        scope: "./"
+                    })
+                    .then(function (reg) {
+                        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+                    });
+            }
+        }
+    </script>
     <script src="~/js/jquery.js"></script>
     <script src="~/js/bootstrap.js"></script>
 

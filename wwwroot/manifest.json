@@ -1,0 +1,21 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Home Page - Metropolitan Backflow",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://metropolitanbackflow.com/",
+  "short_name": "Metropolitan Backflow",
+  "theme_color": "transparent",
+  "description": "",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64"
+    }
+  ]
+}
